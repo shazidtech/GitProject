@@ -37,7 +37,11 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
+		//
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
 	}
 	
 	public void longPressAction(WebElement ele) {

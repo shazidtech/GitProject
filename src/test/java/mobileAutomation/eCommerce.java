@@ -25,6 +25,7 @@ public class eCommerce extends BaseTest{
 		Assert.assertEquals(toastMessage, "Please enter your name");
 		
 		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 
 	}
