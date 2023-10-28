@@ -35,6 +35,7 @@ public class BaseTest {
 		URL url = new URL("http://127.0.0.1:4723");
 		driver = new AndroidDriver(url, option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 	}
 	
@@ -68,6 +69,8 @@ public class BaseTest {
 		return price;
 		
 	}
+	
+	
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
